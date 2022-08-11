@@ -3,11 +3,16 @@
 </script>
 <template>
   <div id="sidebar">
-    <router-link to="/">Home</router-link>
-    <router-link to="/About">About</router-link>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="About">About</RouterLink>
+
   </div>
 </template>
 
 <style scoped>
-
+  #sidebar{
+    background-color: pink;
+    float: left;
+    display: block;
+  }
 </style>

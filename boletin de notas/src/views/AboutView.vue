@@ -1,11 +1,11 @@
 <script setup>
-import sidebar from '../components/sidebar.vue';
+import SideBarVue from "../components/SideBar.vue";
 </script>
 <template>
-  <div>
-    <sidebar/>
+  
+    <SideBarVue></SideBarVue>
     <h1>This is an about page</h1>
-  </div>
+  
 
 </template>
 
