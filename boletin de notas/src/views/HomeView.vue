@@ -21,8 +21,13 @@ import Product from "../components/product.vue";
       v-for="product in productsStore.products"
       :image="product.image"
       :title="product.title"
+      :descripcion="product.description"
+      :price="product.price"
     />
     
 
   </div>
 </template>
+<style scoped>
+
+</style>

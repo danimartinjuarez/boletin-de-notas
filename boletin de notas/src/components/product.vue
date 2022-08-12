@@ -1,15 +1,18 @@
 <template>
-  <div class="product-card">
-    <figure class="card-Img">
-        <img :src="image" alt="">
-    </figure>
-    <h5>{{title}}</h5>
-    <p>{{ descripcion }}</p>
-    <h3>{{ precio }}</h3>
-  </div>
+    <div class="product-card card-group">
+        <div class="card " style="width: 18rem;">
+            <img :src="image" class="card-img" alt="...">
+            <div class="card-body text-primary">
+                <p class="card-text">{{ title }}</p>
+                <p class="card-text">{{ descripcion }}</p>
+                <p class="card-text">{{ price }}</p>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script setup>
+
 const props = defineProps({
     id: {
         type: Number,
@@ -34,6 +37,6 @@ const props = defineProps({
 })
 </script>
 
-<style>
+<style scoped>
 
 </style>
